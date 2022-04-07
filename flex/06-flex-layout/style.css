@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  --standar-pading: 15px;
+  --standar-font-size: 16px;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -24,4 +31,48 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/*  -------------------------------------------------Mi CSS --------------------------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: var(--standar-pading);
+}
+
+.header a, .footer a {
+  text-decoration: none;
+  font-size: var(--standar-font-size);
+  color: black;
+  
+}
+
+.header li, .footer li {
+  list-style-type: none;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: var(--standar-pading);
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 10px 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
 }
